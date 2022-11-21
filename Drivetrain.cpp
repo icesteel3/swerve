@@ -16,8 +16,8 @@ class Drive {
 
 public:
   void getTokyoDRIFTAmt(driftX, driftY) {
-    if (driftY > 0 && driftX < 0) {
-      frontLeftAmt = 
+    if (driftY > 0) {          // top-half
+      frontLeftAmt = (driftX+1)*.5
     }
   }
 }
