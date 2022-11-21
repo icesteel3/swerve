@@ -15,9 +15,11 @@ class Drive {
   backRight -> SetInverted();
 
 public:
-  void getTokyoDRIFTAmt(driftX, driftY) {
+  void getDRIFTAmt(driftX, driftY) {
     if (driftY > 0) {          // top-half
-      frontLeftAmt = (driftX+1)*.5
+      if (driftY >= .5) {
+        frontLeftAmt = driftX+driftY;
+        
     }
   }
 }
